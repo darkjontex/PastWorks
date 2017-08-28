@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1291981627 source:d:\jonathan\ufma\l program\exercicio alexandre\agenda gata (jonny)\agenda-gata.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<conio.h>
+	<ctype.h>
+

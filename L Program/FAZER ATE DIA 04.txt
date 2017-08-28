@@ -1,0 +1,8 @@
+Faça um programa em Linguagem C que realize a tarefa a seguir:
+
+
+Faça uma matriz que se aloque dinamicamente com a função malloc().
+
+Requer estude de material na internet e tempo.
+
+NÃO DEIXAR PARA ULTIMA HORA!

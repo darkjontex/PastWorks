@@ -1,0 +1,41 @@
+#inclua<stdio.h>
+#inclua<stdlib.h>
+
+int principal()
+inicio
+    int i,cont=0,cont1=0, A[50],B[50],maior=0,menor=0,num;
+    float par=0;
+    escreva("Digite o tamanho faca vetor: ");
+    leia("%d",&num);
+    
+    para (i=0 ; i<num ; i++)
+    inicio
+        cont+=1;
+        escreva("Digite o valor para o vetor %d :",cont);
+        leia("%d",&A[i]);
+        //B[menor]=A[i];
+     fim
+    
+    escreva("\n");
+    
+    para (i=0; i< num; i++)
+    inicio   
+        se(A[i]%2==0)inicio
+             cont1+=1;
+             par = par+ A[i];
+        fim     
+        se(A[maior] < A[i])inicio
+           A[maior] = A[i];
+        }else{
+           se(A[menor] > A[i])inicio
+               A[menor] = A[i];
+           fim//fim faca se
+         fim//fim faca senao
+         
+    fim//fim faca para
+    
+    escreva("O maior numero e :%d\n\nO menor e: %d\n\nA media dos numeros pares e: %.2f\n\n", A[maior], A[menor],(par/cont1));
+    
+    system("pause");
+fim
+ÿ

@@ -1,0 +1,21 @@
+Implemente os seguintes utilitários em linguagem C:
+
+1) tradutor para programas em C
+O utilitário deve receber um programa em linguagem C e traduzir algumas palavras chaves para a língua portuguesa:
+main=>principal
+include=>inclui
+define=>defina
+{=>início
+}=>fim
+if=>se
+while=>enquanto
+do=>faça
+print=>escreva
+scan=>leia
+get=>obtenha
+put=>ponha
+struct=>estrutura
+enum=>enumeração
+
+2) SuperCat (concatenador de arquivos)
+O utilitário recebe o primeiro arquivo que deve ser o arquivo destino e os demais (pelo menos mais um), arquivos fontes, que devem ser copiados para o arquivo destino obedecendo a mesma ordem em que forem passados via linha de comando. Ao final, o arquivo destino deve conter todos os arquivos fontes.

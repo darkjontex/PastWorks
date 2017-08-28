@@ -1,0 +1,9 @@
+
+void remString (char *str, int inicio, int fim){
+        for (inicio;str[fim]!='\0';fim++,inicio++)
+                str[inicio]=str[fim];
+
+        str[inicio]='\0';
+}
+
+\o\ k, k+j
