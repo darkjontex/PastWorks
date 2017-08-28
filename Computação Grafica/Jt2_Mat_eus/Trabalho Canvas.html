@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalho de Canvas</title>
+</head>
+<body onload="screen = new Screen()">
+	<script async src="Trabalho Canvas.js"></script>
+	<script async src="canvas-toBlob.js"></script>
+	<script async src="Blob.js"></script>
+	<script async src="FileSaver.js"></script>
+	
+	<div style="height:480px;width:650px;float:left">
+		<canvas id="canvas" width="640" height="480" style="border:1px solid #c3c3c3;"
+		onclick="screen.click(event)"
+		onmousemove="screen.drawRubberband(event)">
+			Seu browser nao suporta a tag HTML5 canvas.
+		</canvas>
+	</div>
+	<div>
+		Escolher operacao: <select id="operation">
+			<option value="point" checked>Inserir ponto</option>
+			<option value="line">Inserir linha</option>
+			<option value="poligon">Inserir poligono</option>
+			<option value="bezier">Inserir curva de bezier</option>
+			<option value="pick">Selecionar objeto</option>
+		</select>
+		Escolher cor <input type="color" id="colorpicker"/>
+		<input type="button" value="Defazer selecao" onclick="screen.deselecionar()"/>
+		<input type="button" value="Mostar lista de elementos" onclick="screen.listarObjetos()"/>
+		<br><br>
+		Translacao X <input type="text" id="transx" placeholder="0" onkeydown="return screen.limitInput(event)"/>
+		Translacao Y <input type="text" id="transy" placeholder="0" onkeydown="return screen.limitInput(event)"/>
+		<br>
+		Escala X <input type="text" id="escalax" placeholder="1" onkeydown="return screen.limitInput(event)"/>
+		Escala Y <input type="text" id="escalay" placeholder="1" onkeydown="return screen.limitInput(event)"/>
+		<br>
+		Angulo: <input type="text" id="angulo" placeholder="0" onkeydown="return screen.limitInput(event)"/>
+		<br>
+		Espelhar em X <input type="checkbox" id="espelharX"/>
+		Espelhar em Y <input type="checkbox" id="espelharY"/>
+		<input type="button" value="Transformar" onclick="screen.transform()"/>
+		<br><br>
+		Mostrar Fecho Convexo <input type="checkbox" id="convexhull" onchange="screen.redraw()"/>
+		<p id="teste"></p>
+		<input type="button" value="Salvar como imagem" onclick="screen.salvarImagem()"/>
+		<input type="button" value="Salvar como texto" onclick="screen.salvarTexto()"/>
+		<br>
+		<input type="file" name="file[]" accept="text/plain" onchange="screen.carregar(event)"/>
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+primeira e ultima equipes - nossas questões
+497 - Strategic Defense Initiative	primeira
+10192 - Vacation			primeira
+10559 - Blocks				ultima
+10118 - Free Candies			ultima
+
+questões das outras equipes - espião - em ordem crescente de dificuldade (segundo eu)
+10465 - Homer Simpson
+944 - Happy Numbers
+116 - Unidirectional TSP
+111 - History Grading
+10069 - Distinct Subsequences
+348 - Optimal Array Multiplication Sequence
+10599 - Robots(II)
+607 - Scheduling Lectures

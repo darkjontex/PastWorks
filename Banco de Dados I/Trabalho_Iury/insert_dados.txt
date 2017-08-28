@@ -1,0 +1,37 @@
+Códigos de inserção de valores nas tabelas:
+
+INSERT INTO Aluno VALUES (00001, "Wendell", "w@gmail.com", 32489947, "1990-10-07", "MA", "são luis", "Av. dos africanos", "São Cristovão", "65037-107");
+INSERT INTO Aluno VALUES (00002, "Caio", "c@gmail.com", 35035487, "1995-08-17", "MA", "são luis", "Rua dos anoes", "Turu", "65071-367");
+INSERT INTO Aluno VALUES (00003, "Leonardo", "l@bol.com", 32235587, "1987-05-09", "MA", "são luis", "Av. dos alemaes", "São francisco", "65037-567");
+
+INSERT INTO Professor VALUES (101, "Marcos Françuha", 9882547799, "marcos@bol.com");
+INSERT INTO Professor VALUES (102, "Fabricio Françuha", 9885718902, "ff@bol.com");
+INSERT INTO Professor VALUES (103, "Simara Rocha", 9882548899, "sr@bol.com");
+
+INSERT INTO Modalidade VALUES(10, "Mambo", 75);
+INSERT INTO Modalidade VALUES(11, "Street Dance", 85);
+INSERT INTO Modalidade VALUES(12, "Bale", 95);
+
+INSERT INTO Nivel VALUES(01, "Basico");
+INSERT INTO Nivel VALUES(02, "Intermediario");
+INSERT INTO Nivel VALUES(03, "Expert");
+
+INSERT INTO Salario VALUES(00000258769000, 857, "2014-07-24", 101);
+
+INSERT INTO Turma VALUES(001, 101, "Seg-Quart", "14:00", 01, 11);
+INSERT INTO Turma VALUES(002, 102, "Seg-Quart", "14:00", 01, 12);
+INSERT INTO Turma VALUES(003, 103, "Ter-Quint", "14:00", 01, 10);
+INSERT INTO Turma VALUES(004, 101, "Seg-Quart", "16:00", 01, 12);
+INSERT INTO Turma VALUES(005, 101, "Sexta", "17:00", 01, 11);
+
+INSERT INTO Aluno_turma VALUES(00001, 001);
+INSERT INTO Aluno_turma VALUES(00002, 003);
+INSERT INTO Aluno_turma VALUES(00003, 002);
+
+INSERT INTO Dinheiro VALUES(10000025000001, 75, "2014-05-05", 00002);
+INSERT INTO Dinheiro VALUES(10000025000002, 85, "2014-06-15", 00001);
+INSERT INTO Cartao VALUES(4004548726023500, "VISA", "2014-05-05", 01050025007082, "2016-08", 0003);
+
+
+SELECT nome FROM Professor where Turma.codigo_modalidade = 10;
+

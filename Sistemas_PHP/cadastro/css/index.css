@@ -1,0 +1,30 @@
+<style type="text/css">
+body {
+background-color: #b0c4de;
+}
+.ppge {
+weight: 100px;
+height: 130px;
+background-image:url("/cadastro/images/topo_fundo.jpg");
+background-repeat: no-repeat;
+background-position: 250px 0px;
+margin-top: 120px;
+}
+.dee {
+weight: 600px;
+height: 180px;
+background-image:url("/cadastro/images/image_dee.png");
+background-repeat: no-repeat;
+background-position: 500px 0px;
+}
+.texto{
+font: 28px "Times New Roman", Times, serif, sans-serif;
+text-transform:uppercase;
+font-weight:bold;
+color:#000;
+position:absolute;
+margin-left: 380px;
+margin-top: 50px;
+}
+
+</style>
